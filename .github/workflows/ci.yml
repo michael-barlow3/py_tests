@@ -20,3 +20,8 @@ jobs:
           pip install -r requirements.txt
       - name: Run tests with pytest
         run: pytest tests_config.py
+        env:
+          FLASK_APP:wtf.py
+          FLASK_DEBUG:1
+          DATA_URL:data:text/plain,AAA,Abdominal Aortic Aneurysm,,
+          SLACK_TOKENS:A,B

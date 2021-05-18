@@ -23,6 +23,7 @@ jobs:
           echo "The Path - $GITHUB_ACTION_PATH"
           echo "The Workspace - $GITHUB_WORKSPACE"
           echo "The Ref $GITHUB_REF"
+          ls *.py
         env:
           FLASK_APP: wtf.py
           FLASK_DEBUG: 1

@@ -24,7 +24,7 @@ jobs:
           echo "The Workspace - $GITHUB_WORKSPACE"
           echo "The Ref $GITHUB_REF"
           echo "The file - $DATA_URL"
-          ls *.py
+          pytest tests_wtf.py          
         env:
           FLASK_APP: wtf.py
           DATA_URL: test_acronyms.csv

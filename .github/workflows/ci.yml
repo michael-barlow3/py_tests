@@ -23,5 +23,5 @@ jobs:
         env:
           FLASK_APP: wtf.py
           FLASK_DEBUG: 1
-          DATA_URL: data:text/plain,AAA,Abdominal Aortic Aneurysm,,
+          DATA_URL: https://raw.githubusercontent.com/michael-barlow3/py_tests/master/test_acronyms.csv
           SLACK_TOKENS: A,B

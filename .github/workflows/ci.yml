@@ -27,14 +27,16 @@ jobs:
           echo "The file - $DATA_URL"
           echo "The file - $DATA_URL1"
           echo "---------------"
+          link="MY_NAME"
+          link_1=$GITHUB_SERVER_URL
           echo link
+          echo link_1
           echo link1
           echo link2
           echo "---------------"
           # pytest tests_wtf.py
         env:
           FLASK_APP: wtf.py
-          link: GITHUB_SERVER_URL
           link1: $GITHUB_SERVER_URL
           link2: ${GITHUB_SERVER_URL}          
           # DATA_URL: file:///test_acronyms.csv

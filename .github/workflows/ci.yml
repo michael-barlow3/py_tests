@@ -25,9 +25,11 @@ jobs:
           echo "The Ref $GITHUB_REF"
           echo "The csv path $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/master/test_acronyms.csv"
           echo "The file - $DATA_URL"
-          pytest tests_wtf.py          
+          echo "The file - $DATA_URL1"
+          # pytest tests_wtf.py          
         env:
           FLASK_APP: wtf.py
           DATA_URL: $(GITHUB_SERVER_URL)/$(GITHUB_REPOSITORY)/blob/master/test_acronyms.csv
+          DATA_URL1: ${{GITHUB_SERVER_URL}}
           FLASK_DEBUG: 1
           SLACK_TOKENS: A,B

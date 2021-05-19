@@ -27,7 +27,7 @@ jobs:
           echo "The file - $DATA_URL"
           echo "The file - $DATA_URL1"
           echo "---------------"
-          link = $GITHUB_SERVER_URL
+          set link = $GITHUB_SERVER_URL
           echo link
           echo "---------------"
           pytest tests_wtf.py          

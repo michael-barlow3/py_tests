@@ -23,7 +23,7 @@ jobs:
           echo "The Path - $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           echo "The Workspace - $GITHUB_WORKSPACE"
           echo "The Ref $GITHUB_REF"
-          echo "The csv path $GITHUB_SERVER_URL
+          echo "The csv path $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/master/test_acronyms.csv"
           echo "The file - $DATA_URL"
           pytest tests_wtf.py          
         env:

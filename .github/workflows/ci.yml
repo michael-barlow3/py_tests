@@ -27,6 +27,6 @@ jobs:
           pytest tests_wtf.py          
         env:
           FLASK_APP: wtf.py
-          DATA_URL: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/master/test_acronyms.csv
+          DATA_URL: ${{env.GITHUB_SERVER_URL}}/${{env.GITHUB_REPOSITORY}}/blob/master/test_acronyms.csv
           FLASK_DEBUG: 1
           SLACK_TOKENS: A,B

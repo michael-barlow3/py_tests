@@ -32,11 +32,11 @@ jobs:
           echo "---------------"
           link="MY_NAME"
           link_1=$GITHUB_SERVER_URL
-          echo link
-          echo link_1
-          echo link1
-          echo link2
-          echo link3
+#          echo link
+ #         echo link_1
+  #        echo link1
+   #       echo link2
+    #      echo link3
           echo "---------------"
           
           echo "${{ env.action_state }}" # This will output 'yellow'
@@ -45,8 +45,8 @@ jobs:
         env:
           FLASK_APP: wtf.py
           link1: $GITHUB_SERVER_URL
-          link2: ${GITHUB_SERVER_URL}
-          link3: ${{ $GITHUB_SERVER_URL }}
+#           link2: ${GITHUB_SERVER_URL}
+#           link3: ${{ $GITHUB_SERVER_URL }}
           # DATA_URL: file:///test_acronyms.csv
           # DATA_URL: $(GITHUB_SERVER_URL)/$(GITHUB_REPOSITORY)/blob/master/test_acronyms.csv
           # DATA_URL1: GITHUB_SERVER_URL

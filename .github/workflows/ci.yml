@@ -26,6 +26,10 @@ jobs:
           echo "The csv path $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/master/test_acronyms.csv"
           echo "The file - $DATA_URL"
           echo "The file - $DATA_URL1"
+          echo "---------------"
+          link = $GITHUB_SERVER_URL
+          echo link
+          echo "---------------"
           pytest tests_wtf.py          
         env:
           FLASK_APP: wtf.py

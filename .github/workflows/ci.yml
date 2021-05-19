@@ -26,6 +26,9 @@ jobs:
           echo "The csv path $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/master/test_acronyms.csv"
           echo "The file - $DATA_URL"
           echo "The file - $DATA_URL1"
+          
+          echo "action_state=yellow" >> $GITHUB_ENV
+          
           echo "---------------"
           link="MY_NAME"
           link_1=$GITHUB_SERVER_URL
@@ -34,6 +37,9 @@ jobs:
           echo link1
           echo link2
           echo "---------------"
+          
+          echo "${{ env.action_state }}" # This will output 'yellow'
+          echo "${{ env.GITHUB_SERVER_URL }} the URL"
           # pytest tests_wtf.py
         env:
           FLASK_APP: wtf.py

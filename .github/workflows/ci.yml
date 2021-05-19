@@ -46,7 +46,7 @@ jobs:
           FLASK_APP: wtf.py
           link1: $GITHUB_SERVER_URL
           link2: ${GITHUB_SERVER_URL}
-          link3: ${{ GITHUB_SERVER_URL }}
+          link3: ${{ $GITHUB_SERVER_URL }}
           # DATA_URL: file:///test_acronyms.csv
           # DATA_URL: $(GITHUB_SERVER_URL)/$(GITHUB_REPOSITORY)/blob/master/test_acronyms.csv
           # DATA_URL1: GITHUB_SERVER_URL
